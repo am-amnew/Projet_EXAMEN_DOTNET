@@ -1,0 +1,132 @@
+@model WebApplication2.Models.UserRegister
+@{
+    Layout = "_Layout3";
+}
+
+<link rel="stylesheet" href="~/css/c3.css" asp-append-version="true" />
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Ajouter Module</title>
+
+    <style>
+        /* Add your existing CSS styles here */
+
+        /* Style to separate label and input */
+        .input-container {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            /* Adjust as needed */
+        }
+
+        .text-small-uppercase {
+            margin-bottom: 5px;
+            /* Adjust as needed */
+        }
+    </style>
+    <style>
+        .logo-container {
+            position: fixed;
+            top: 10px;
+            /* Adjust the top position as needed */
+            left: 10px;
+            /* Adjust the left position as needed */
+            z-index: 1000;
+            /* Ensure the logo appears above other content */
+        }
+
+        .text-small-uppercase.custom-button {
+            display: block;
+            width: 150px;
+            height: 60px;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+            background-color: #f79577;
+            color: white;
+            border-radius: 5px;
+            position: fixed;
+            bottom: 10px;
+            /* Adjust the distance from the bottom */
+            left: 200px;
+            /* Adjust the distance from the left */
+            z-index: 1000;
+            /* Set z-index to make sure it's above other elements */
+        }
+
+
+        .logo {
+            width: 100px;
+            /* Adjust the width as needed */
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+
+    <main style="margin:40px">
+        <figure>
+            <picture>
+
+                <img src="https://i.pinimg.com/originals/02/e2/ca/02e2ca0104cfbf95753038cc5a35b0a2.gif"
+                    alt="Citymap illustration" />
+            </picture>
+        </figure>
+        <div class="headline">
+            <h2 class="text-headline" style="font-size:20px;">Register</h2>
+            <h3 class="text-subheadline" style="font-size:15px;">Unlock a world of possibilities. Register today and
+                embark on a journey where stories meet connection, and knowledge finds a home.</h2>
+        </div>
+        <form asp-action="Register" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+
+            <span>
+                <label for="username" class="text-small-uppercase" style="font-size:15px;"
+                    id="usernameLabel">FirstName</label>
+                <br><br>
+                <input asp-for="FirstName" class="form-control" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </span>
+
+            <span>
+                <label for="username" class="text-small-uppercase" style="font-size:15px;" id="usernameLabel">LastName
+                </label>
+                <br><br>
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </span>
+
+            <span>
+                <label for="username" class="text-small-uppercase" style="font-size:15px;" id="usernameLabel">Email
+                </label>
+                <br><br>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </span>
+
+            <span>
+                <label for="username" class="text-small-uppercase" style="font-size:15px;" id="usernameLabel">Password
+                </label>
+                <br><br>
+                <input asp-for="Password" type="password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </span>
+
+            <br><br> <br><br> <br><br> <br><br> <br><br> <br><br>
+            <input class="text-small-uppercase custom-button" type="submit" style="font-size:15px;" value="Register" />
+
+        </form>
+    </main>
+
+</body>
+
+</html>

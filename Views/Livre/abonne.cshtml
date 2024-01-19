@@ -1,0 +1,8 @@
+<h2>Livres empruntés par @Model.Nom @Model.Prenom (ID: @Model.Id)</h2>
+<p>Number of borrowed books: @Model.LivresEmpruntes.Count</p>
+<ul>
+    @foreach (var livre in Model.LivresEmpruntes)
+    {
+        <li>@livre.Titre</li>
+    }
+</ul>

@@ -1,0 +1,33 @@
+@model WebApplication2.Models.Abonne
+<link rel="stylesheet" href="~/css/css2.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/css3.css" asp-append-version="true" />
+
+@{
+    Layout = "_Layout";
+}
+
+<div class="container">
+
+
+    <form asp-action="DeleteConfirmed" method="post">
+        <p style="color:white">Are you sure you want to delete this Abonne?</p>
+
+
+
+        <table class="responsive-table">
+            <tr>
+                <th style="color:white">@Html.DisplayNameFor(model => model.Nom)</th>
+                <td>@Html.DisplayFor(model => model.Nom)</td>
+            </tr>
+            <tr>
+                <th style="color:white">@Html.DisplayNameFor(model => model.Prenom)</th>
+                <td>@Html.DisplayFor(model => model.Prenom)</td>
+            </tr>
+
+        </table>
+
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn draw-border">Delete</button>
+        <a asp-action="Index" class="btn draw-border">Cancel</a>
+    </form>
+</div>

@@ -1,0 +1,33 @@
+@model List<WebApplication2.Models.UserRegister>
+<link rel="stylesheet" href="~/css/css2.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/css3.css" asp-append-version="true" />
+
+<div class="container">
+    <table class="responsive-table">
+        <caption>Users</caption>
+        <thead>
+            <tr>
+                <th scope="col" style="font-size: 15px">FirstName</th>
+                <th th scope="col" style="font-size: 15px">LastName</th>
+
+                <th scope="col" style="font-size: 15px">Email</th>
+                <th scope="col" style="font-size: 15px">Password</th>
+
+
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td scope="row" style="font-size: 15px">@user.FirstName</td>
+                    <td scope="row" style="font-size: 15px">@user.LastName</td>
+
+                    <td scope="row" style="font-size: 15px">@user.Email</td>
+                    <td scope="row" style="font-size: 15px">@user.Password</td>
+
+                </tr>
+            }
+        </tbody>
+    </table>

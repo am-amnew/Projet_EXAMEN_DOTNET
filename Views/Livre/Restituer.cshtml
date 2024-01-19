@@ -1,0 +1,48 @@
+@model WebApplication2.Models.Emprunt
+@{
+    Layout = "_Layout";
+}
+
+@{
+    ViewData["Title"] = "Restituer";
+}
+
+
+
+@Html.ValidationSummary(true)
+<style>
+    .center-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        /* Adjust if needed */
+    }
+
+    .form-container {
+        width: 50%;
+        /* Adjust based on your design preferences */
+    }
+</style>
+
+<div class="center-container">
+    <div class="form-container">
+        <form asp-action="RestituerConfirmed" method="post">
+            @Html.AntiForgeryToken()
+
+            <input type="hidden" asp-for="LivreId" value="@ViewBag.LivreId" />
+            <br><br><br><br><br> <!-- Adjust spacing as needed -->
+
+            <div class="form-group">
+                <label style="font-size: 35px; color:white;">Confirmation</label>
+
+                <br><br>
+
+                <p style="font-size: 35px; color:white;">Confirmez-vous la restitution du livre?</p>
+            </div>
+            <br><br><br><br><br> <!-- Adjust spacing as needed -->
+
+            <button type="submit" class="btn draw-border">Restituer</button>
+        </form>
+    </div>
+</div>

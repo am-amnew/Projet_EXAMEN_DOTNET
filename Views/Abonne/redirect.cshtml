@@ -1,0 +1,108 @@
+@model WebApplication2.Models.Abonne
+<link rel="stylesheet" href="~/css/c3.css" asp-append-version="true" />
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Ajouter Module</title>
+
+    <style>
+        /* Add your existing CSS styles here */
+
+        /* Style to separate label and input */
+        .input-container {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            /* Adjust as needed */
+        }
+
+        .text-small-uppercase {
+            margin-bottom: 5px;
+            /* Adjust as needed */
+        }
+    </style>
+    <style>
+        .logo-container {
+            position: fixed;
+            top: 10px;
+            /* Adjust the top position as needed */
+            left: 10px;
+            /* Adjust the left position as needed */
+            z-index: 1000;
+            /* Ensure the logo appears above other content */
+        }
+
+
+        .text-small-uppercase.custom-button {
+            display: block;
+            width: 150px;
+            height: 60px;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+            background-color: #f79577;
+            color: white;
+            border-radius: 5px;
+            position: fixed;
+            bottom: 10px;
+            /* Adjust the distance from the bottom */
+            left: 600px;
+            /* Adjust the distance from the left */
+            z-index: 1000;
+            /* Set z-index to make sure it's above other elements */
+        }
+
+
+        .logo {
+            width: 100px;
+            /* Adjust the width as needed */
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+
+    <main style="margin:40px">
+        <figure>
+            <picture>
+
+                <img src="https://i.pinimg.com/564x/5c/6c/4d/5c6c4d89574ced93ea14fc866d3f7302.jpg"
+                    alt="Citymap illustration" />
+            </picture>
+        </figure>
+        <div class="headline">
+            <h2 class="text-headline" style="font-size:20px;">Added succesfully</h2>
+            <h3 class="text-subheadline" style="font-size:15px;">Building a community one subscriber at a time. Ajouter
+                Abonné – where connections flourish and stories unfold.</h2>
+        </div>
+
+        <form>
+
+            <span>
+                <br><br>
+                <br><br>
+
+                <label for="username" class="text-small-uppercase" style="font-size:15px;" id="usernameLabel">Every new
+                    subscriber is not just a number; they're a connection, a voice that joins the conversation, and a
+                    part
+                    of a growing community.</label>
+                <br><br>
+            </span>
+
+            <span>
+
+            </span>
+
+        </form>
+    </main>
+
+</body>
+
+</html>

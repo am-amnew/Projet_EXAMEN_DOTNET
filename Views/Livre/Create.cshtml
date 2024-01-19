@@ -1,0 +1,125 @@
+﻿@model WebApplication2.Models.Livre
+@{
+    Layout = "_Layout";
+}
+<link rel="stylesheet" href="~/css/c3.css" asp-append-version="true" />
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Ajouter Module</title>
+
+    <style>
+        /* Add your existing CSS styles here */
+
+        /* Style to separate label and input */
+        .input-container {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            /* Adjust as needed */
+        }
+
+        .text-small-uppercase {
+            margin-bottom: 5px;
+            /* Adjust as needed */
+        }
+    </style>
+    <style>
+        .logo-container {
+            position: fixed;
+            top: 10px;
+            /* Adjust the top position as needed */
+            left: 10px;
+            /* Adjust the left position as needed */
+            z-index: 1000;
+            /* Ensure the logo appears above other content */
+        }
+
+        .text-small-uppercase.custom-button {
+            display: block;
+            width: 150px;
+            height: 60px;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+            background-color: #f79577;
+            color: white;
+            border-radius: 5px;
+            position: fixed;
+            bottom: 10px;
+            /* Adjust the distance from the bottom */
+            left: 600px;
+            /* Adjust the distance from the left */
+            z-index: 1000;
+            /* Set z-index to make sure it's above other elements */
+        }
+
+
+        .logo {
+            width: 100px;
+            /* Adjust the width as needed */
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+
+    <main style="margin:40px">
+        <figure>
+            <picture>
+
+                <img src="https://i.pinimg.com/originals/26/75/10/267510a7393eb4b7bf3ceaa4881625f2.gif"
+                    alt="Citymap illustration" />
+            </picture>
+        </figure>
+        <div class="headline">
+            <h2 class="text-headline" style="font-size:20px;">Ajouter Livre</h2>
+            <h3 class="text-subheadline" style="font-size:15px;">Adding books to your collection is like adding
+                treasures to your soul. Ajouter Livre, enrich your world one book at a time.</h2>
+        </div>
+        <form asp-action="Create" method="post">
+            @Html.AntiForgeryToken()
+            <span>
+                <label for="username" class="text-small-uppercase" style="font-size:15px;"
+                    id="usernameLabel">Titre</label>
+                <br><br>
+                <input asp-for="Titre" class="form-control" />
+            </span>
+
+            <span>
+                <label for="username" class="text-small-uppercase" style="font-size:15px;" id="usernameLabel">Auteur
+                </label>
+                <br><br>
+                <input asp-for="Auteur" class="form-control" />
+            </span>
+
+            <span>
+                <label for="username" class="text-small-uppercase" style="font-size:15px;" id="usernameLabel">Resume
+                </label>
+                <br><br>
+                <input asp-for="Resume" class="form-control"></input>
+            </span>
+
+            <span>
+                <label for="username" class="text-small-uppercase" style="font-size:15px;"
+                    id="usernameLabel">EstEmprunte</label>
+                <br><br>
+                <input asp-for="EstEmprunte" class="form-check-input" type="checkbox" />
+            </span>
+            <br><br> <br><br> <br><br> <br><br> <br><br> <br><br>
+
+            <button class="text-small-uppercase custom-button" type="submit" style="font-size:15px;">Create</button>
+
+        </form>
+    </main>
+
+</body>
+
+</html>

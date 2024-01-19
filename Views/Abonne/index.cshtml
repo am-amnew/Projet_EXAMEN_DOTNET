@@ -1,0 +1,66 @@
+@model List<WebApplication2.Models.Abonne>
+
+<link rel="stylesheet" href="~/css/css2.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/css3.css" asp-append-version="true" />
+<style>
+    .text-small-uppercase.custom-button {
+        display: block;
+        width: 100px;
+        /* Set the width according to your design */
+        margin: 0 auto;
+        /* Center the link horizontally */
+        height: 40px;
+        /* Set the width according to your design */
+
+        text-align: center;
+        /* Center the text within the link */
+        padding: 10px;
+        /* Add padding for better aesthetics */
+        text-decoration: none;
+        background-color: #fce51c;
+        /* Add your desired background color */
+        color: white;
+        /* Set text color */
+        border-radius: 5px;
+        /* Add rounded corners if desired */
+        font-size: 10px;
+    }
+</style>
+<div class="container">
+    <table class="responsive-table">
+        <caption>Liste des Abonnes</caption>
+        <thead>
+            <tr>
+
+
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Les livres empruntés</th>
+                <th>Edit</th>
+                <th>Delete</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var abonne in Model)
+            {
+                <tr>
+                    <td>@abonne.Nom</td>
+                    <td>@abonne.Prenom</td>
+                    <td>
+                        <a asp-action="LivresEmpruntes" class="text-small-uppercase custom-button"
+                            asp-route-abonneId="@abonne.Id">Livres empruntés</a>
+
+                    </td>
+
+                    <td>
+                        <a asp-action="Edit" class="text-small-uppercase custom-button" asp-route-id="@abonne.Id">Edit</a>
+
+                    </td>
+                    <td> <a asp-action="Delete" class="text-small-uppercase custom-button"
+                            asp-route-id="@abonne.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>

@@ -1,0 +1,37 @@
+@model WebApplication2.Models.Abonne
+
+
+<link rel="stylesheet" href="~/css/css2.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/css3.css" asp-append-version="true" />
+
+<div class="container">
+    <table class="responsive-table">
+        <caption>Livres empruntés par @Model.Nom @Model.Prenom</caption>
+        <thead>
+            <tr>
+
+
+                <th>Titre</th>
+                <th>Auteur</th>
+                <th>Résumé</th>
+                <th>Date Emprunt</th>
+                <th>Date Retour</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var emprunt in Model.Emprunts)
+            {
+                <tr>
+                    <td>@emprunt.Livre.Titre</td>
+                    <td>@emprunt.Livre.Auteur</td>
+                    <td>@emprunt.Livre.Resume</td>
+                    <td>@emprunt.DateEmprunt</td>
+                    <td>@emprunt.DateRetour</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div>
+        <a asp-action="Index" class="btn draw-border">Retour </a>
+    </div>

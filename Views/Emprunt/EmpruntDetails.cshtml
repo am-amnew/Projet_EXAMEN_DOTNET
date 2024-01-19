@@ -1,0 +1,50 @@
+@model WebApplication2.Models.Emprunt
+<link rel="stylesheet" href="~/css/css2.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/css3.css" asp-append-version="true" />
+
+@{
+    ViewData["Title"] = "Détails de l'emprunt";
+}
+<div class="container">
+
+
+
+    <table class="responsive-table">
+        <caption style="color:white">Détails de l'emprunt</caption>
+
+        <tr>
+            <thead>
+                <th>ID</th>
+            </thead>
+            <td>@Model.Id</td>
+        </tr>
+        <tr>
+            <thead>
+                <th>Livre ID</th>
+            </thead>
+            <td>@Model.LivreId</td>
+        </tr>
+        <tr>
+            <thead>
+                <th>Abonné ID</th>
+            </thead>
+            <td>@Model.AbonneId</td>
+        </tr>
+        <tr>
+            <thead>
+                <th>Date d'emprunt</th>
+            </thead>
+            <td>@Model.DateEmprunt.ToString("dd/MM/yyyy")</td>
+        </tr>
+        <tr>
+            <thead>
+                <th>Date de retour</th>
+            </thead>
+            <td>@Model.DateRetour.ToString("dd/MM/yyyy")</td>
+        </tr>
+    </table>
+
+    <div>
+        <a asp-action="Index" class="btn draw-border">Retour à la liste des emprunts</a>
+    </div>
+</div>

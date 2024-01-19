@@ -1,0 +1,49 @@
+﻿@model List<WebApplication2.Models.Livre>
+@{
+    Layout = "_Layout";
+}
+<link rel="stylesheet" href="~/css/css2.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/css3.css" asp-append-version="true" />
+
+<div class="container">
+    <table class="responsive-table">
+        <caption>Top movies of All Time</caption>
+        <thead>
+            <tr>
+
+
+                <th scope="col" style="font-size: 15px">Titre</th>
+                <th scope="col" style="font-size: 15px">Auteur</th>
+                <th scope="col" style="font-size: 15px">Résumé</th>
+                <th scope="col" style="font-size: 15px">État</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var livre in Model)
+            {
+                <tr>
+                    <td scope="row" style="font-size: 15px">@livre.Titre</td>
+                    <td scope="row" style="font-size: 15px">@livre.Auteur</td>
+                    <td scope="row" style="font-size: 15px">@livre.Resume</td>
+                    <td scope="row" style="font-size: 15px">
+                        @if (livre.EstEmprunte)
+                        {
+                            <span class="text-danger">Emprunté</span>
+                            <br />
+                            <span>
+                                <a asp-controller="Livre" asp-action="Restituer" asp-route-livreId="@livre.Id" scope="row"
+                                    style="font-size: 15px">Restituer</a>
+                            </span>
+                        }
+                        else
+                        {
+                            <span class="text-success">
+                                <a asp-controller="Livre" asp-action="Emprunter" asp-route-livreId="@livre.Id" scope="row"
+                                    style="font-size: 15px">Emprunter</a>
+                            </span>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>

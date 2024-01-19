@@ -1,0 +1,27 @@
+﻿@model List<WebApplication2.Models.Livre>
+
+<h1>Livre List</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Titre</th>
+            <th>Auteur</th>
+            <th>Résumé</th>
+            <th>Emprunté</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var livre in Model)
+        {
+            <tr>
+                <td>@livre.Id</td>
+                <td>@livre.Titre</td>
+                <td>@livre.Auteur</td>
+                <td>@livre.Resume</td>
+                <td>@(livre.EstEmprunte ? "Yes" : "No")</td>
+            </tr>
+        }
+    </tbody>
+</table>

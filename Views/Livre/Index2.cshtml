@@ -1,0 +1,21 @@
+@model List<WebApplication2.Models.Abonne>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nom</th>
+            <th>Prenom</th>
+            <!-- Add other columns as needed -->
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var abonne in Model)
+        {
+            <tr>
+                <td>@abonne.Nom</td>
+                <td>@abonne.Prenom</td>
+                <!-- Add other columns as needed -->
+            </tr>
+        }
+    </tbody>
+</table>

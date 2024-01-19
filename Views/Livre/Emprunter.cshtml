@@ -1,0 +1,141 @@
+@model WebApplication2.Models.Emprunt
+@{
+    Layout = "_Layout";
+}
+@{
+    ViewData["Title"] = "Emprunter";
+}
+<link rel="stylesheet" href="~/css/c3.css" asp-append-version="true" />
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Ajouter Module</title>
+
+    <style>
+        /* Add your existing CSS styles here */
+
+        /* Style to separate label and input */
+        .input-container {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            /* Adjust as needed */
+        }
+
+        .text-small-uppercase {
+            margin-bottom: 5px;
+            /* Adjust as needed */
+        }
+    </style>
+    <style>
+        .logo-container {
+            position: fixed;
+            top: 10px;
+            /* Adjust the top position as needed */
+            left: 10px;
+            /* Adjust the left position as needed */
+            z-index: 1000;
+            /* Ensure the logo appears above other content */
+        }
+
+        .text-small-uppercase.custom-button {
+            display: block;
+            width: 150px;
+            /* Set the width according to your design */
+            margin: 0 auto;
+            /* Center the link horizontally */
+            height: 60px;
+            /* Set the width according to your design */
+
+            text-align: center;
+            /* Center the text within the link */
+            padding: 10px;
+            /* Add padding for better aesthetics */
+            text-decoration: none;
+            background-color: #fce51c;
+            /* Add your desired background color */
+            color: white;
+            /* Set text color */
+            border-radius: 5px;
+            /* Add rounded corners if desired */
+        }
+
+        .logo {
+            width: 100px;
+            /* Adjust the width as needed */
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+
+    <main style="margin:40px">
+        <figure>
+            <picture>
+
+                <img src="~/image/b2.gif" alt="Citymap illustration" />
+            </picture>
+        </figure>
+        <div class="headline">
+            <h2 class="text-headline" style="font-size:20px;">Emprunter</h2>
+            <h3 class="text-subheadline" style="font-size:15px;">Embrace the magic of borrowing – where every book is a
+                journey waiting to be shared. Borrow a story, lend a memory, and let the adventure unfold.</h2>
+        </div>
+
+        @Html.ValidationSummary(true)
+
+        <form asp-action="EmprunterConfirmed" method="post">
+            @Html.AntiForgeryToken()
+
+            <input type="hidden" asp-for="LivreId" value="@ViewBag.LivreId" />
+            <span>
+                <label for="username" class="text-small-uppercase" style="font-size:15px;"
+                    id="usernameLabel">AbonneId</label>
+                <br><br>
+                <input asp-for="AbonneId" class="text-small-uppercase" style="font-size:15px;" />
+                @Html.ValidationMessageFor(model => model.AbonneId, "", new { @class = "text-danger" })
+            </span>
+
+            <span>
+                <label for="username" class="text-small-uppercase" style="font-size:15px;"
+                    id="usernameLabel">DateEmprunt
+                </label>
+                <br><br>
+                <input asp-for="DateEmprunt" type="datetime-local" class="text-small-uppercase"
+                    style="font-size:15px;" />
+                @Html.ValidationMessageFor(model => model.DateEmprunt, "", new
+                    {
+                        @class = "text-danger"
+
+                    })
+            </span>
+            <br><br>
+            <span>
+                <label for="username" class="text-small-uppercase" style="font-size:15px;" id="usernameLabel">DateRetour
+                </label>
+                <br><br>
+                <input asp-for="DateRetour" type="datetime-local" class="text-small-uppercase"
+                    style="font-size:15px;" />
+                @Html.ValidationMessageFor(model => model.DateRetour, "", new
+                    {
+                        @class = "text-danger"
+
+                    })
+            </span>
+
+
+            <button type="submit" class="text-small-uppercase custom-button" class="btn draw-border"
+                style="font-size:15px;">Emprunter</button>
+        </form>
+    </main>
+
+</body>
+
+</html>

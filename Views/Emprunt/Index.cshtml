@@ -1,0 +1,76 @@
+@model List<WebApplication2.Models.Emprunt>
+<link rel="stylesheet" href="~/css/css2.css" asp-append-version="true" />
+
+<link rel="stylesheet" href="~/css/css3.css" asp-append-version="true" />
+
+@{
+    ViewData["Title"] = "Liste des emprunts";
+}
+<style>
+    .text-small-uppercase.custom-button {
+        display: block;
+        width: 100px;
+        /* Set the width according to your design */
+        margin: 0 auto;
+        /* Center the link horizontally */
+        height: 40px;
+        /* Set the width according to your design */
+
+        text-align: center;
+        /* Center the text within the link */
+        padding: 10px;
+        /* Add padding for better aesthetics */
+        text-decoration: none;
+        background-color: #fce51c;
+        /* Add your desired background color */
+        color: white;
+        /* Set text color */
+        border-radius: 5px;
+        /* Add rounded corners if desired */
+        font-size: 10px;
+    }
+</style>
+
+
+
+<div class="container">
+    <table class="responsive-table">
+        <caption style="color:white">Liste des emprunt</caption>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Livre ID</th>
+                <th>Abonné ID</th>
+                <th>Date d'emprunt</th>
+                <th>Date de retour</th>
+                <th>details</th>
+                <th>Delete </th>
+                <th>Edit</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var emprunt in Model)
+            {
+                <tr>
+                    <td>@emprunt.Id</td>
+                    <td>@emprunt.LivreId</td>
+                    <td>@emprunt.AbonneId</td>
+                    <td>@emprunt.DateEmprunt.ToString("dd/MM/yyyy")</td>
+                    <td>@emprunt.DateRetour.ToString("dd/MM/yyyy")</td>
+                    <td>
+                        <a asp-action="EmpruntDetails" asp-controller="Emprunt" class="text-small-uppercase custom-button"
+                            asp-route-id="@emprunt.Id">Détails</a>
+                    </td>
+                    <td> <a asp-action="DeleteEmprunt" asp-controller="Emprunt" class="text-small-uppercase custom-button"
+                            asp-route-empruntId="@emprunt.Id">Delete</a></td>
+                    <td> <a asp-action="EditEmprunt" asp-controller="Emprunt" class="text-small-uppercase custom-button"
+                            asp-route-empruntId="@emprunt.Id">Edit</a> </td>
+
+
+
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

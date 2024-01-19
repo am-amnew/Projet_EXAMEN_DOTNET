@@ -1,0 +1,45 @@
+@model List<WebApplication2.Models.Emprunt>
+
+<h2>Emprunts</h2>
+
+<p>Count: @Model.Count</p>
+
+<h2>Emprunts</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Livre</th>
+            <th>Abonne</th>
+            <th>Date Emprunt</th>
+            <th>Date Retour</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var emprunt in Model)
+        {
+            <tr>
+                <td>@emprunt.Livre?.Titre</td>
+                <td>@emprunt.Abonne?.Nom</td>
+                <td>@emprunt.DateEmprunt.ToString("yyyy-MM-dd")</td>
+                <td>
+                    @if (emprunt.DateRetour == DateTime.MinValue)
+                    {
+                        <span class="text-danger">En cours</span>
+                    }
+                    else
+                    {
+                        @emprunt.DateRetour.ToString("yyyy-MM-dd")
+                    }
+                </td>
+                <td>
+                    @if (emprunt.DateRetour == DateTime.MinValue)
+                    {
+                        <a asp-controller="Livre" asp-action="Restituer" asp-route-empruntId="@emprunt.Id">Restituer</a>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,157 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = WebApplication2
+build_property.RootNamespace = WebApplication2
+build_property.ProjectDir = c:\Users\Elitebook folio\source\repos\WebApplication2\WebApplication2\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = c:\Users\Elitebook folio\source\repos\WebApplication2\WebApplication2
+build_property._RazorSourceGeneratorDebug = 
+
+[c:/Users/Elitebook folio/source/repos/WebApplication2/WebApplication2/Views/Abonne/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvbm5lXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Elitebook folio/source/repos/WebApplication2/WebApplication2/Views/Abonne/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvbm5lXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Elitebook folio/source/repos/WebApplication2/WebApplication2/Views/Abonne/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvbm5lXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Elitebook folio/source/repos/WebApplication2/WebApplication2/Views/Abonne/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvbm5lXGluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Elitebook folio/source/repos/WebApplication2/WebApplication2/Views/Abonne/LivresEmpruntes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvbm5lXExpdnJlc0VtcHJ1bnRlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Elitebook folio/source/repos/WebApplication2/WebApplication2/Views/Abonne/redirect.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvbm5lXHJlZGlyZWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Elitebook folio/source/repos/WebApplication2/WebApplication2/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Elitebook folio/source/repos/WebApplication2/WebApplication2/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Elitebook folio/source/repos/WebApplication2/WebApplication2/Views/Account/Users.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxVc2Vycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Elitebook folio/source/repos/WebApplication2/WebApplication2/Views/Emprunt/DeleteEmprunt.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wcnVudFxEZWxldGVFbXBydW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Elitebook folio/source/repos/WebApplication2/WebApplication2/Views/Emprunt/EditEmprunt.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wcnVudFxFZGl0RW1wcnVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Elitebook folio/source/repos/WebApplication2/WebApplication2/Views/Emprunt/EmpruntDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wcnVudFxFbXBydW50RGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Elitebook folio/source/repos/WebApplication2/WebApplication2/Views/Emprunt/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wcnVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Elitebook folio/source/repos/WebApplication2/WebApplication2/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Elitebook folio/source/repos/WebApplication2/WebApplication2/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Elitebook folio/source/repos/WebApplication2/WebApplication2/Views/Livre/abonne.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cmVcYWJvbm5lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Elitebook folio/source/repos/WebApplication2/WebApplication2/Views/Livre/abonnesWithLivresEmpruntes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cmVcYWJvbm5lc1dpdGhMaXZyZXNFbXBydW50ZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Elitebook folio/source/repos/WebApplication2/WebApplication2/Views/Livre/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cmVcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Elitebook folio/source/repos/WebApplication2/WebApplication2/Views/Livre/css.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cmVcY3NzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Elitebook folio/source/repos/WebApplication2/WebApplication2/Views/Livre/css2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cmVcY3NzMi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Elitebook folio/source/repos/WebApplication2/WebApplication2/Views/Livre/Emprunter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cmVcRW1wcnVudGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Elitebook folio/source/repos/WebApplication2/WebApplication2/Views/Livre/Emprunts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cmVcRW1wcnVudHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Elitebook folio/source/repos/WebApplication2/WebApplication2/Views/Livre/Index - Copier.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cmVcSW5kZXggLSBDb3BpZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Elitebook folio/source/repos/WebApplication2/WebApplication2/Views/Livre/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cmVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Elitebook folio/source/repos/WebApplication2/WebApplication2/Views/Livre/Index2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cmVcSW5kZXgyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Elitebook folio/source/repos/WebApplication2/WebApplication2/Views/Livre/LivresEmpruntes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cmVcTGl2cmVzRW1wcnVudGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Elitebook folio/source/repos/WebApplication2/WebApplication2/Views/Livre/Restituer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cmVcUmVzdGl0dWVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Elitebook folio/source/repos/WebApplication2/WebApplication2/Views/Livre/test.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cmVcdGVzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Elitebook folio/source/repos/WebApplication2/WebApplication2/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Elitebook folio/source/repos/WebApplication2/WebApplication2/Views/Shared/_Layout2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Elitebook folio/source/repos/WebApplication2/WebApplication2/Views/Shared/_Layout3.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Elitebook folio/source/repos/WebApplication2/WebApplication2/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Elitebook folio/source/repos/WebApplication2/WebApplication2/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Elitebook folio/source/repos/WebApplication2/WebApplication2/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Elitebook folio/source/repos/WebApplication2/WebApplication2/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-amt9qciysm

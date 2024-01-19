@@ -1,0 +1,110 @@
+@model WebApplication2.Models.Abonne
+<link rel="stylesheet" href="~/css/c3.css" asp-append-version="true" />
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Ajouter Module</title>
+
+    <style>
+        /* Add your existing CSS styles here */
+
+        /* Style to separate label and input */
+        .input-container {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            /* Adjust as needed */
+        }
+
+        .text-small-uppercase {
+            margin-bottom: 5px;
+            /* Adjust as needed */
+        }
+    </style>
+    <style>
+        .logo-container {
+            position: fixed;
+            top: 10px;
+            /* Adjust the top position as needed */
+            left: 10px;
+            /* Adjust the left position as needed */
+            z-index: 1000;
+            /* Ensure the logo appears above other content */
+        }
+
+
+        .text-small-uppercase.custom-button {
+            display: block;
+            width: 150px;
+            height: 60px;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+            background-color: #f79577;
+            color: white;
+            border-radius: 5px;
+            position: fixed;
+            bottom: 10px;
+            /* Adjust the distance from the bottom */
+            left: 600px;
+            /* Adjust the distance from the left */
+            z-index: 1000;
+            /* Set z-index to make sure it's above other elements */
+        }
+
+
+        .logo {
+            width: 100px;
+            /* Adjust the width as needed */
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+
+    <main style="margin:40px">
+        <figure>
+            <picture>
+
+                <img src="https://i.pinimg.com/originals/ee/5c/11/ee5c11685f708525cb3c2c786f98b153.gif"
+                    alt="Citymap illustration" />
+            </picture>
+        </figure>
+        <div class="headline">
+            <h2 class="text-headline" style="font-size:20px;">Ajouter Abonné</h2>
+            <h3 class="text-subheadline" style="font-size:15px;">Building a community one subscriber at a time. Ajouter
+                Abonné – where connections flourish and stories unfold.</h2>
+        </div>
+
+        <form asp-action="Create" method="post">
+            @Html.AntiForgeryToken()
+
+            <span>
+                <label for="username" class="text-small-uppercase" style="font-size:15px;"
+                    id="usernameLabel">Nom</label>
+                <br><br>
+                <input asp-for="Nom" class="form-control" />
+            </span>
+
+            <span>
+                <label for="username" class="text-small-uppercase" style="font-size:15px;" id="usernameLabel">Prenom
+                </label>
+                <br><br>
+                <input asp-for="Prenom" class="form-control" />
+            </span>
+
+            <button class="text-small-uppercase custom-button" type="submit" style="font-size:15px;">Create</button>
+
+        </form>
+    </main>
+
+</body>
+
+</html>
